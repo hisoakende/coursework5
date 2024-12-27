@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Главная</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Журналы и газеты</h1>
+        <div class="nav-links">
+            <a href="login.html" id="login-link">Вход</a>
+            <a href="register.html" id="register-link">Регистрация</a>
+        </div>
+        <div class="search-container">
+            <input type="text" id="search" class="searchJournal" placeholder="Найти издания...">
+            <button class="search-button" onclick="loadJournals()">Поиск</button>
+        </div>
+        <div class="filter-options">
+            <label>
+                <input type="checkbox" id="subscribedCheckbox"> Подписки
+            </label>
+            <label>
+                <input type="checkbox" id="ownedCheckbox"> Мои журналы
+            </label>
+        </div>
+        <div id="journals"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

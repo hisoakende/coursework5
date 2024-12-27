@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Register</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Регистрация</h1>
+        <form id="registerForm" onsubmit="register(event)">
+            <input type="email" id="regEmail" class="form-input" placeholder="Email" required>
+            <input type="password" id="regPassword" class="form-input" placeholder="Пароль" required>
+            <button type="submit">Зарегистрироваться</button>
+        </form>
+        <p id="registerMessage"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
